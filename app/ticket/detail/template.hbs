@@ -68,6 +68,15 @@
           <p>{{model.detailsWhere}}</p>
         </div>
       </div>
+
+
+      <div class="media">
+        <div class="media__left"></div>
+        <div class="media__content">
+          <hr>
+        </div>
+      </div>
+
       <div class="media">
         <div class="media__left">
           <p class="label">Description</p>
@@ -90,6 +99,31 @@
         </div>
         <div class="media__content">
           <p><a href="#">{{model.assignee}}</a></p>
+        </div>
+      </div>
+
+
+      <div class="media">
+        <div class="media__left"></div>
+        <div class="media__content">
+          <hr>
+        </div>
+      </div>
+
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Photos</p>
+        </div>
+        <div class="media__content">
+          <div class="level">
+            <div class="level__group">
+              {{#each model.photos as |photo|}}
+                <div class="photo-frame photo-frame__med">
+                  <img src="{{photo}}" alt="{{model.title}}">
+                </div>
+              {{/each}}
+            </div>
+          </div>
         </div>
       </div>
     </div>

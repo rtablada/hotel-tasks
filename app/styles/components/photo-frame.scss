@@ -1,0 +1,9 @@
+.photo-frame {
+  &--med {
+    max-width: 10rem;
+  }
+
+  img {
+    display: block;
+  }
+}

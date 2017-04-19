@@ -1,0 +1,42 @@
+<div class="app__sub-nav">
+  <h3 class="no-margin">Open Tickets</h3>
+</div>
+
+<div class="app__content">
+  <div class="master-detail">
+    <div class="master-detail__master">
+      <div class="collection-container">
+        <div class="collection-container__heading">
+          <label class="input input--with-icon" for="ticket-search">
+            <span class="fa fa-search fa-fw"></span>
+            {{input id="ticket-search" class="input__field" placeholder="Search Tasks"}}
+          </label>
+
+        </div>
+        <div class="collection-container__content">
+          <ul class="collection-list">
+            <li class="collection-list__item">
+              <a href="#" class="ticket-item ticket-item--success">
+                <span class="ticket-item__description">Check with fire company about upcoming inspection</span>
+                <span class="ticket-item__time">8:00AM</span>
+              </a>
+            </li>
+            <li class="collection-list__item">
+              <a href="#" class="ticket-item">
+                <span class="ticket-item__description">114 Toilet is making noise</span>
+                <span class="ticket-item__time">12:15PM</span>
+              </a>
+            </li>
+            <li class="collection-list__item">
+              <a href="#" class="ticket-item ticket-item--warning">
+                <span class="ticket-item__description">Pool Area Deck has damage to the liner</span>
+                <span class="ticket-item__time">2:45PM</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="master-detail__detail">{{outlet}}</div>
+  </div>
+</div>

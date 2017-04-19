@@ -9,7 +9,7 @@ $c-link: #4da0eb;
 
 $c-border: #d4d4d4;
 
-$c-succcess: #54df17;
+$c-success: #54df17;
 $c-info: #418be5;
 $c-warning: #ffa300;
 
@@ -19,6 +19,9 @@ $m-mobilewidth: 480px;
 $b-width: 2px;
 $b-default: $b-width solid $c-border;
 $b-dark: $b-width solid $c-text;
+$b-success: $b-width solid $c-success;
+$b-info: $b-width solid $c-info;
+$b-warning: $b-width solid $c-warning;
 
 @import 'reset';
 @import 'layout';
@@ -26,3 +29,6 @@ $b-dark: $b-width solid $c-text;
 
 
 @import 'components/nav-bar';
+@import 'components/collection';
+@import 'components/input';
+@import 'components/ticket/ticket-item';

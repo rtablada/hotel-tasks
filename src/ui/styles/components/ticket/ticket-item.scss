@@ -1,0 +1,25 @@
+.ticket-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -$m-gutter;
+  margin-left: 0;
+
+  padding: $m-gutter;
+  padding-left: 0;
+  border-bottom: $b-info;
+
+  color: $c-text;
+
+  &--warning {
+    border-bottom: $b-warning;
+  }
+
+  &--success {
+    border-bottom: $b-success;
+  }
+
+  &__time {
+    color: $c-text-mid;
+  }
+}

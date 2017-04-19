@@ -1,7 +1,35 @@
 .app {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 
   &__nav {
+    flex: 0;
     border-bottom: $b-default;
+  }
+
+  &__sub-nav {
+    flex: 0;
+    padding: $m-gutter;
+    border-bottom: $b-default;
+    background: $c-bg2;
+  }
+
+  &__content {
+    flex-basis: 100%;
+  }
+}
+
+.master-detail {
+  display: flex;
+  height: 100%;
+
+  &__master {
+    flex-basis: 50%;
+  }
+
+  &__detail {
+    flex-basis: 50%;
+    border-left: $b-default;
   }
 }

@@ -1,0 +1,18 @@
+.input {
+  display: flex;
+  align-items: center;
+  padding: $m-gutter;
+  cursor: text;
+
+  input {
+    flex-grow: 1;
+    border: 0;
+    outline: 0;
+    background: none;
+    font: inherit;
+  }
+
+  > * + * {
+    margin-left: $m-gutter;
+  }
+}

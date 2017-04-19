@@ -1,7 +1,6 @@
-# quore
+# Hotel Task
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application is an example application built with Ember.
 
 ## Prerequisites
 
@@ -9,30 +8,24 @@ You will need the following things properly installed on your computer.
 
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
-* [Bower](https://bower.io/)
-* [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+* [Yarn Package Manager](https://yarnpkg.com)
 
 ## Installation
 
 * `git clone <repository-url>` this repository
 * `cd quore`
-* `npm install`
-* `bower install`
+* `yarn` (`npm install` also will work)
 
 ## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
+* `yarn start`
+* Visit the appliation at [http://localhost:4200](http://localhost:4200).
 
 ### Running Tests
 
-* `ember test`
-* `ember test --server`
+* `yarn test`
+
+Tests are also run in CI using [TravisCI](https://travis-ci.org/rtablada/hotel-tasks)
 
 ### Building
 
@@ -41,7 +34,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+This application is automatically set to deploy to https://hotel-tasks.surge.sh when tests pass on CI with Travis.
 
 ## Further Reading / Useful Links
 

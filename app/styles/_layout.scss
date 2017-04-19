@@ -44,4 +44,16 @@
       padding: $m-gutter;
     }
   }
+
+  @media screen and (max-width: #{$m-mobilewidth}) {
+    flex-direction: column;
+
+    &__master {
+      border-bottom: $b-default;
+    }
+
+    &__detail {
+      border-left: 0;
+    }
+  }
 }

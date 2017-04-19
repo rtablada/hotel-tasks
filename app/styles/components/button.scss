@@ -1,0 +1,23 @@
+.button {
+  margin: 0;
+  padding: $m-gutter / 2;
+  border: 0;
+  outline: none;
+  background: none;
+
+  color: $c-text-light;
+  font: inherit;
+  text-transform: uppercase;
+
+  &--success {
+    color: $c-success;
+  }
+}
+
+.button-group {
+  display: flex;
+
+  &__divider {
+
+  }
+}

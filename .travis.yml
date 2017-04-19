@@ -11,13 +11,11 @@ cache:
     - $HOME/.cache # includes bowers cache
 
 before_install:
-  - yarn global add bower phantomjs-prebuilt ember-cli
-  - bower --version
+  - yarn global add phantomjs-prebuilt
   - phantomjs --version
 
 install:
   - yarn
-  - bower install
 
 script:
   - yarn test

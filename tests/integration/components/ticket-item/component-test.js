@@ -1,5 +1,4 @@
 import { moduleForComponent, test } from 'ember-qunit';
-import testSelector from 'ember-test-selectors';
 import hbs from 'htmlbars-inline-precompile';
 import moment from 'moment';
 
@@ -20,9 +19,9 @@ test('it renders with an example ticket', function (assert) {
 
   this.render(hbs`{{ticket-item ticket=ticket}}`);
 
-  assert.equal(this.$(testSelector('ticket-item-name')).text().trim(), this.get('ticket.title'));
-  assert.equal(this.$(testSelector('ticket-item-time')).text().trim(), '09:05 AM');
-  const link = this.$(testSelector('ticket-item-link'));
+  assert.equal(this.$('.ticket-item__description').text().trim(), this.get('ticket.title'));
+  assert.equal(this.$('.ticket-item__time').text().trim(), '09:05 AM');
+  const link = this.$('a');
 
   assert.ok(link.hasClass('ticket-item--warning'));
 });

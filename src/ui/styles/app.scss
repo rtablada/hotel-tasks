@@ -1,0 +1,28 @@
+$c-white: #fff;
+$c-bg: #efefef;
+$c-bg2: #f4f4f4;
+
+$c-text: #5c5c5c;
+$c-text-mid: #9a9a9a;
+$c-text-light: #ababab;
+$c-link: #4da0eb;
+
+$c-border: #d4d4d4;
+
+$c-succcess: #54df17;
+$c-info: #418be5;
+$c-warning: #ffa300;
+
+$m-gutter: 1rem;
+$m-mobilewidth: 480px;
+
+$b-width: 2px;
+$b-default: $b-width solid $c-border;
+$b-dark: $b-width solid $c-text;
+
+@import 'reset';
+@import 'layout';
+@import 'typography';
+
+
+@import 'components/nav-bar';

@@ -1,0 +1,33 @@
+html {
+  color: $c-text;
+  font-family: Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  align-self: center;
+  max-width: 100%;
+}
+
+a {
+  color: $c-link;
+  text-decoration: none;
+}

@@ -10,7 +10,7 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build",
+    "build": "ember build -e production",
     "start": "ember server",
     "test": "ember test",
     "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist hotel-tasks.surge.sh"

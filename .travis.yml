@@ -1,0 +1,33 @@
+---
+language: node_js
+node_js:
+  - "7"
+
+sudo: false
+
+cache:
+  directories:
+    - $HOME/.npm
+    - $HOME/.cache # includes bowers cache
+
+before_install:
+  - yarn global add bower phantomjs-prebuilt ember-cli
+  - bower --version
+  - phantomjs --version
+
+install:
+  - yarn
+  - bower install
+
+script:
+  - yarn test
+
+before_deploy:
+  - yarn build
+  - cp ./dist/index.html ./dist/200.html
+
+deploy:
+  skip_cleanup: true
+  provider: surge
+  project: ./dist/
+  domain: hotel-tasks.surge.sh

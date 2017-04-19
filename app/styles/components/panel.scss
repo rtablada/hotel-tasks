@@ -1,0 +1,10 @@
+.panel {
+  padding: $m-gutter;
+
+  &--empty {
+    border: $b-empty;
+    border-radius: $b-radius;
+
+    color: $c-text-light;
+  }
+}

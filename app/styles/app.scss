@@ -12,16 +12,20 @@ $c-border: #d4d4d4;
 $c-success: #54df17;
 $c-info: #418be5;
 $c-warning: #ffa300;
+$c-empty: #efefef;
 
 $m-gutter: 1rem;
 $m-mobilewidth: 480px;
 
 $b-width: 2px;
+$b-width-thick: 6px;
+$b-radius: 12px;
 $b-default: $b-width solid $c-border;
 $b-dark: $b-width solid $c-text;
 $b-success: $b-width solid $c-success;
 $b-info: $b-width solid $c-info;
 $b-warning: $b-width solid $c-warning;
+$b-empty: $b-width-thick solid $c-empty;
 
 @import 'reset';
 @import 'layout';
@@ -31,4 +35,5 @@ $b-warning: $b-width solid $c-warning;
 @import 'components/nav-bar';
 @import 'components/collection';
 @import 'components/input';
+@import 'components/panel';
 @import 'components/ticket/ticket-item';

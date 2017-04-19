@@ -1,46 +1,7 @@
 <div class="app">
   <div class="app__nav">
-    <div class="nav-bar">
-      <div class="nav-bar__group nav-bar__group--left">
-        <h1 class="nav-bar__logo">Quore</h1>
-
-        <h2 class="nav-bar__explain">
-          <span class="text-success">Tasks</span>
-          <span class="fa fa-angle-down"></span>
-        </h2>
-      </div>
-      <div class="nav-bar__group nav-bar__group--center nav-bar__group--hide-mobile"></div>
-      <div class="nav-bar__group nav-bar__group--right nav-bar__group--hide-mobile">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            {{#link-to "index"}}
-              Sandbox Hotel
-            {{/link-to}}
-          </li>
-          <li class="nav-list__item">
-            <a href="#">
-              Scott
-            </a>
-          </li>
-        </ul>
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#">
-              <span class="fa fa-comment-o"></span>
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#">
-              <span class="fa fa-envelope-o"></span>
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a href="#">
-              <span class="fa fa-bell"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    {{nav-bar}}
   </div>
+
+  {{outlet}}
 </div>

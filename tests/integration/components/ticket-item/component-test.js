@@ -11,7 +11,7 @@ test('it renders with an example ticket', function (assert) {
     title: 'Show a title',
     id: 2,
     status: 'warning',
-    requestDate: moment('2017-04-18T09:05:00-05:00'),
+    requestDate: moment('2017-04-18T09:05:00'),
   });
 
   // Set any properties with this.set('myProperty', 'value');

@@ -13,17 +13,48 @@
 
   &--warning {
     border-bottom: $b-warning;
+
+    &.active {
+      background: $c-warning;
+    }
   }
 
   &--success {
     border-bottom: $b-success;
+
+    &.active {
+      background: $c-success;
+    }
   }
 
   &--danger {
     border-bottom: $b-danger;
+
+    &.active {
+      background: $c-danger;
+    }
+  }
+
+  &--info {
+    border-bottom: $b-info;
+
+    &.active {
+      background: $c-info;
+    }
   }
 
   &__time {
     color: $c-text-mid;
+  }
+
+  &.active {
+    margin-left: -$m-gutter;
+    padding-left: $m-gutter;
+
+    color: $c-white;
+
+    .ticket-item__time {
+      display: none;
+    }
   }
 }

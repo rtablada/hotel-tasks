@@ -33,7 +33,7 @@ export default Factory.extend({
 
     const pics = [];
 
-    for (let index = 0; index < length; index++) {
+    for (let index = 0; index < length; index += 1) {
       pics.push(faker.image.imageUrl);
     }
 

@@ -17,10 +17,7 @@
           <ul class="collection-list">
             {{#each model as |ticket|}}
               <li class="collection-list__item">
-                <a href="#" class="ticket-item ticket-item--{{ticket.status}}">
-                  <span class="ticket-item__description">{{ticket.title}}</span>
-                  <span class="ticket-item__time">{{moment-format ticket.requestDate "hh:mm A"}}</span>
-                </a>
+                {{ticket-item ticket=ticket}}
               </li>
             {{/each}}
           </ul>

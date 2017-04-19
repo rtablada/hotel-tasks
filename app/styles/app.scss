@@ -42,10 +42,34 @@ $b-empty: $b-width-thick solid $c-empty;
 @import 'components/ticket/ticket-item';
 
 .work-order {
+  display: flex;
+  flex-direction: column;
+
   &__heading {
     padding: $m-gutter;
 
     border-bottom: $b-default;
+  }
+
+  &__content {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    overflow-y: auto;
+  }
+
+  &__section {
+    padding: $m-gutter;
+
+    & + & {
+      border-top: $b-default;
+    }
+  }
+
+  &__footer {
+    padding: $m-gutter;
+
+    border-top: $b-default;
   }
 }
 
@@ -58,5 +82,29 @@ $b-empty: $b-width-thick solid $c-empty;
 
   &__item {
     margin: 0;
+  }
+}
+
+.button {
+  margin: 0;
+  padding: $m-gutter / 2;
+  border: 0;
+  outline: none;
+  background: none;
+
+  color: $c-text-light;
+  font: inherit;
+  text-transform: uppercase;
+
+  &--success {
+    color: $c-success;
+  }
+}
+
+.button-group {
+  display: flex;
+
+  &__divider {
+
   }
 }

@@ -1,6 +1,6 @@
 <div class="master-detail__panel-fill work-order">
   <div class="work-order__heading">
-    <div class="level">
+    <div class="level level--bottom">
       <div class="level__group level__group--left"></div>
       <div class="level__group level__group--center">
         <h4 class="panel-title no-margin">Work Order</h4>
@@ -21,6 +21,26 @@
             <span class="fa fa-fw fa-paperclip"></span>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-order__content">
+    <div class="work-order__section"></div>
+    <div class="work-order__section"></div>
+  </div>
+
+  <div class="work-order__footer">
+    <div class="level">
+      <div class="level__group level__group--left">
+        <p class="no-margin">Paused by <a href="#">{{model.assignee}}</a> {{moment-from-now model.lastUpdated}}</p>
+      </div>
+      <div class="level__group level__group--right">
+        <div class="button-group">
+          <button class="button">Pause</button>
+          <hr class="button-group__divider">
+          <button class="button button--success">Start</button>
+        </div>
       </div>
     </div>
   </div>

@@ -1,5 +1,5 @@
 <div class="master-detail__panel-fill work-order">
-  <div class="work-order__heading">
+  <div class="work-order__heading work-order__heading--{{model.status}}">
     <div class="level level--bottom">
       <div class="level__group level__group--left"></div>
       <div class="level__group level__group--center">
@@ -29,7 +29,9 @@
     <div class="work-order__section">
       <div class="media">
         <div class="media__left">
-          <img src="{{model.guestAvatar}}" alt="{{model.guest}}" class="avatar">
+          <div class="avatar">
+            <img src="{{model.guestAvatar}}" alt="{{model.guest}}" class="avatar__pic">
+          </div>
         </div>
         <div class="media__content">
           <h4>{{model.guest}}</h4>
@@ -39,7 +41,58 @@
         </div>
       </div>
     </div>
-    <div class="work-order__section"></div>
+    <div class="work-order__section">
+      <h3>Order Details</h3>
+
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Item</p>
+        </div>
+        <div class="media__content">
+          <p>{{model.detailsItem}}</p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Issue</p>
+        </div>
+        <div class="media__content">
+          <p>{{model.detailsIssue}}</p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Where</p>
+        </div>
+        <div class="media__content">
+          <p>{{model.detailsWhere}}</p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Description</p>
+        </div>
+        <div class="media__content">
+          <p>{{model.detailsDescription}}</p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Due</p>
+        </div>
+        <div class="media__content">
+          <p>{{moment-format model.due "MMMM D, YYYY"}}</p>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media__left">
+          <p class="label">Assignee</p>
+        </div>
+        <div class="media__content">
+          <p><a href="#">{{model.assignee}}</a></p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="work-order__footer">

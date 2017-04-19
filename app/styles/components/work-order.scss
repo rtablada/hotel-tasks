@@ -6,6 +6,22 @@
     padding: $m-gutter;
 
     border-bottom: $b-default;
+
+    &--warning {
+      border-bottom: $b-warning;
+    }
+
+    &--success {
+      border-bottom: $b-success;
+    }
+
+    &--danger {
+      border-bottom: $b-danger;
+    }
+
+    &--info {
+      border-bottom: $b-info;
+    }
   }
 
   &__content {

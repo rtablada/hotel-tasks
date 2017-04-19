@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 
   &__nav {
     flex: 0;
@@ -16,7 +17,9 @@
   }
 
   &__content {
-    flex-basis: 100%;
+    flex: 1;
+    flex-basis: 0;
+    overflow: hidden;
   }
 }
 

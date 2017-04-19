@@ -1,0 +1,4 @@
+{{#link-to "ticket.detail" ticket class=tagClass data-test-ticket-item-link=true}}
+  <span data-test-ticket-item-name class="ticket-item__description">{{ticket.title}}</span>
+  <span data-test-ticket-item-time class="ticket-item__time">{{moment-format ticket.requestDate "hh:mm A"}}</span>
+{{/link-to}}

@@ -1,14 +1,19 @@
 /* eslint-env node */
 
-module.exports = function(environment) {
-  var ENV = {
+module.exports = function (environment) {
+  const ENV = {
+    googleFonts: [
+      'Open+Sans:300,400,700',
+      'Roboto:300',
+    ],
+
     'ember-resolver': {
       features: {
-        EMBER_RESOLVER_MODULE_UNIFICATION: true
-      }
+        EMBER_RESOLVER_MODULE_UNIFICATION: true,
+      },
     },
     modulePrefix: 'quore',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -18,14 +23,14 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
   };
 
   if (environment === 'development') {

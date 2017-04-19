@@ -4,10 +4,11 @@ module.exports = {
     ecmaVersion: 6,
     sourceType: 'module'
   },
-  extends: 'eslint:recommended',
+  extends: 'rtablada',
   env: {
     browser: true
   },
   rules: {
+    "comma-dangle": ["error", "always-multiline"],
   }
 };

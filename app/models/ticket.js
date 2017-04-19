@@ -6,6 +6,7 @@ export default DS.Model.extend({
   requestDate: DS.attr('date'),
   lastUpdated: DS.attr('date'),
 
+  guestAvatar: DS.attr('string'),
   guest: DS.attr('string'),
   room: DS.attr('string'),
   notice: DS.attr('string'),

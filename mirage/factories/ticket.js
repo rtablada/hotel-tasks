@@ -8,6 +8,8 @@ export default Factory.extend({
   requestDate: faker.date.recent,
   lastUpdated: faker.date.recent,
 
+  guestAvatar: () => faker.internet.avatar(),
+
   guest() {
     return `${faker.name.firstName()} ${faker.name.lastName()}`;
   },

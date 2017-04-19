@@ -15,24 +15,14 @@
         </div>
         <div class="collection-container__content">
           <ul class="collection-list">
-            <li class="collection-list__item">
-              <a href="#" class="ticket-item ticket-item--success">
-                <span class="ticket-item__description">Check with fire company about upcoming inspection</span>
-                <span class="ticket-item__time">8:00AM</span>
-              </a>
-            </li>
-            <li class="collection-list__item">
-              <a href="#" class="ticket-item">
-                <span class="ticket-item__description">114 Toilet is making noise</span>
-                <span class="ticket-item__time">12:15PM</span>
-              </a>
-            </li>
-            <li class="collection-list__item">
-              <a href="#" class="ticket-item ticket-item--warning">
-                <span class="ticket-item__description">Pool Area Deck has damage to the liner</span>
-                <span class="ticket-item__time">2:45PM</span>
-              </a>
-            </li>
+            {{#each model as |ticket|}}
+              <li class="collection-list__item">
+                <a href="#" class="ticket-item ticket-item--{{ticket.status}}">
+                  <span class="ticket-item__description">{{ticket.title}}</span>
+                  <span class="ticket-item__time">{{ticket.requestDate}}</span>
+                </a>
+              </li>
+            {{/each}}
           </ul>
         </div>
       </div>

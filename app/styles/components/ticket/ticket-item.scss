@@ -19,6 +19,10 @@
     border-bottom: $b-success;
   }
 
+  &--danger {
+    border-bottom: $b-danger;
+  }
+
   &__time {
     color: $c-text-mid;
   }

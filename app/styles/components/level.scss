@@ -1,0 +1,26 @@
+.level {
+  display: flex;
+
+  &__group {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-items: flex-end;
+
+    &--left {
+      justify-content: flex-start;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
+
+    & > * + * {
+      margin-left: $m-gutter / 2;
+    }
+  }
+}

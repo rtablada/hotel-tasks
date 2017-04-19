@@ -9,6 +9,7 @@ $c-link: #4da0eb;
 
 $c-border: #d4d4d4;
 
+$c-danger: #df1754;
 $c-success: #54df17;
 $c-info: #418be5;
 $c-warning: #ffa300;
@@ -22,6 +23,7 @@ $b-width-thick: 6px;
 $b-radius: 12px;
 $b-default: $b-width solid $c-border;
 $b-dark: $b-width solid $c-text;
+$b-danger: $b-width solid $c-danger;
 $b-success: $b-width solid $c-success;
 $b-info: $b-width solid $c-info;
 $b-warning: $b-width solid $c-warning;
@@ -35,5 +37,26 @@ $b-empty: $b-width-thick solid $c-empty;
 @import 'components/nav-bar';
 @import 'components/collection';
 @import 'components/input';
+@import 'components/level';
 @import 'components/panel';
 @import 'components/ticket/ticket-item';
+
+.work-order {
+  &__heading {
+    padding: $m-gutter;
+
+    border-bottom: $b-default;
+  }
+}
+
+.notification-list {
+  display: flex;
+  margin: 0;
+
+  font: inherit;
+  color: $c-text-mid;
+
+  &__item {
+    margin: 0;
+  }
+}

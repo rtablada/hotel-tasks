@@ -5,3 +5,32 @@
 .no-margin {
   margin: 0;
 }
+
+.panel-title {
+  font-size: 1rem;
+}
+
+.panel-subtitle {
+  color: $c-text-mid;
+  font-size: 1rem;
+
+  text-transform: capitalize;
+}
+
+.status {
+  &--warning {
+    color: $c-warning;
+  }
+
+  &--danger {
+    color: $c-danger;
+  }
+
+  &--info {
+    color: $c-info;
+  }
+
+  &--success {
+    color: $c-success;
+  }
+}

@@ -10,7 +10,7 @@ export default DS.Model.extend({
   guest: DS.attr('string'),
   room: DS.attr('string'),
   notice: DS.attr('string'),
-  checkout: DS.attr('string'),
+  checkout: DS.attr('date'),
 
   detailsItem: DS.attr('string'),
   detailsIssue: DS.attr('string'),

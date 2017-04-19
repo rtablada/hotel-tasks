@@ -5,8 +5,8 @@ export default Factory.extend({
     return faker.lorem.sentence(4);
   },
 
-  requestDate: faker.date.recent,
-  lastUpdated: faker.date.recent,
+  requestDate: () => faker.date.recent(),
+  lastUpdated: () => faker.date.recent(),
 
   guestAvatar: () => faker.internet.avatar(),
 
@@ -17,15 +17,16 @@ export default Factory.extend({
   room() {
     return faker.random.number({ min: 100, max: 505 });
   },
-  notice: faker.random.sentence,
-  checkout: faker.date.future,
 
-  detailsItem: faker.lorem.word,
-  detailsIssue: faker.lorem.word,
-  detailsWhere: faker.lorem.word,
-  detailsDescription: faker.lorem.paragraph,
+  notice: () => faker.lorem.sentence(),
+  checkout: () => faker.date.future(),
 
-  due: faker.date.future,
+  detailsItem: () => faker.lorem.word(),
+  detailsIssue: () => faker.lorem.word(),
+  detailsWhere: () => faker.lorem.word(),
+  detailsDescription: () => faker.lorem.paragraph(),
+
+  due: () => faker.date.future(),
   assignee() {
     return `${faker.name.firstName()} ${faker.name.lastName()}`;
   },

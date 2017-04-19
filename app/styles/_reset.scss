@@ -1,6 +1,7 @@
 html {
   color: $c-text;
   font-family: Roboto, sans-serif;
+  font-weight: 300;
   box-sizing: border-box;
 }
 
@@ -30,4 +31,17 @@ img {
 a {
   color: $c-link;
   text-decoration: none;
+}
+
+strong {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
 }

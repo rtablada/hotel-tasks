@@ -4,7 +4,7 @@ module.exports = function (environment) {
   const ENV = {
     googleFonts: [
       'Open+Sans:300,400,700',
-      'Roboto:300',
+      'Roboto:300,400',
     ],
 
     'ember-resolver': {

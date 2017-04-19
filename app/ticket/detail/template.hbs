@@ -26,7 +26,19 @@
   </div>
 
   <div class="work-order__content">
-    <div class="work-order__section"></div>
+    <div class="work-order__section">
+      <div class="media">
+        <div class="media__left">
+          <img src="{{model.guestAvatar}}" alt="{{model.guest}}" class="avatar">
+        </div>
+        <div class="media__content">
+          <h4>{{model.guest}}</h4>
+          <h5>Guestroom: <strong>{{model.room}}</strong></h5>
+          <h5>Notice: {{model.notice}}</h5>
+          <h5>Checkout: {{moment-format model.checkout "MM/DD/YYYY"}}</h5>
+        </div>
+      </div>
+    </div>
     <div class="work-order__section"></div>
   </div>
 

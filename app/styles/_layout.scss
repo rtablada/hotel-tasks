@@ -4,6 +4,10 @@
   height: 100vh;
   overflow: hidden;
 
+  @media screen and (max-width: #{$m-mobilewidth}) {
+    height: auto;
+  }
+
   &__nav {
     flex: 0;
     border-bottom: $b-default;
@@ -20,6 +24,10 @@
     flex: 1;
     flex-basis: 0;
     overflow: hidden;
+
+    @media screen and (max-width: #{$m-mobilewidth}) {
+      flex-basis: auto;
+    }
   }
 }
 

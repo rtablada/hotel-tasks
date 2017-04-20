@@ -48,4 +48,8 @@
 
     border-top: $b-default;
   }
+
+  &__remove {
+    color: $c-danger;
+  }
 }
